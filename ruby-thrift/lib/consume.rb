@@ -9,6 +9,6 @@ options = {
 }
 
 Tackle.subscribe(options) do |raw_message|
-  message = RThrift.deserialize(raw_message)
-  puts "URL: #{message.url}\nPaylod: #{message.payload}"
+  user = RThrift.deserialize(raw_message)
+  puts "Name: #{user.name}\Age: #{user.age}"
 end

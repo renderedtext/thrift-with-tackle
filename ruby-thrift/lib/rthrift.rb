@@ -1,6 +1,6 @@
 class RThrift
   require "thrift"
-  $:.push("thrift/gen-rb")
+  $:.push("gen-rb")
   require "models_constants"
 
   @serializer   = Thrift::Serializer.new
@@ -11,7 +11,7 @@ class RThrift
   end
 
   def self.deserialize(message)
-    @deserializer.deserialize(Message.new, message)
+    @deserializer.deserialize(User.new, message)
   end
 
 end

@@ -1,11 +1,11 @@
 require "tackle"
 require_relative "rthrift"
 
-message         = Message.new
-message.url     = "http://localhost"
-message.payload = "Hi from Ruby!"
+user      = User.new
+user.name = "John Smith"
+user.age  = 42
 
-binary = RThrift.serialize(message)
+binary = RThrift.serialize(user)
 
 options = {
   :url         => "amqp://localhost",

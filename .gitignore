@@ -1,6 +1,6 @@
 /ruby-thrift/.bundle
 /ruby-thrift/vendor
-/ruby-thrift/thrift/gen-rb
+/ruby-thrift/gen-rb
 /elixir-thrift/deps
 /elixir-thrift/_build
 /elixir-thrft/src
