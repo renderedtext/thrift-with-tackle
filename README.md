@@ -14,9 +14,13 @@ Compile ```.thrift``` file with:
 thrift -r --gen rb thrift/models.thrift
 ```
 
-Start application with:
+Start consuming messages from ```elixir``` with:
 ```bash
-bundle exec ruby lib/app.rb
+bundle exec ruby lib/consume.rb
 ```
 
-After starting, ruby app is subscribed to ```ruby-exchange```
+Send message to ```elixir``` with:
+
+```bash
+bundle exec ruby lib/send.rb
+```
