@@ -1,6 +1,6 @@
 # Elixir-thrift
 
-Test application for implementing thrift while using elixir. Comes in pair with another ruby application with which it is communicating.
+Test application for implementing thrift while using elixir. Comes in pair with an another ruby application, which is also using thrift.
 
 The serialization and deserialization of messages are done by the following functions, which can be found in the ```ElixirThrift.Binary``` module:
 
