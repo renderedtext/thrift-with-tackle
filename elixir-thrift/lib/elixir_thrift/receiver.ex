@@ -8,11 +8,9 @@ defmodule ElixirThrift.Receiver do
   def handle_message(message) do
     IO.puts "A message arrived. Life is good!"
 
-    {:ok ,debinarized_message} = ElixirThrift.Binary.binary_to_elixir(message, {:struct, {:models_types, :User}})
+    {:ok, debinarized_message} = ElixirThrift.Binary.binary_to_elixir(message, {:struct, {:models_types, :User}})
 
     IO.inspect debinarized_message
-
-    {:ok}
   end
 
 end

@@ -5,3 +5,5 @@
 /elixir-thrift/_build
 /elixir-thrift/log
 /elixir-thrift/src
+/elixir-thrift/log/console.log
+/elixir-thrift/log/crash.log 
