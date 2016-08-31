@@ -1,0 +1,97 @@
+2016-08-30 10:29:44.454 [error] <0.159.0> Supervisor 'Elixir.Logger.Supervisor' had child 'Elixir.Logger.ErrorHandler' started with 'Elixir.Logger.Watcher':watcher(error_logger, 'Elixir.Logger.ErrorHandler', {true,false,500}, link) at <0.164.0> exit with reason normal in context child_terminated
+2016-08-30 10:29:44.615 [info] <0.31.0> Application lager started on node nonode@nohost
+2016-08-30 10:29:44.615 [info] <0.31.0> Application exlager started on node nonode@nohost
+2016-08-30 10:29:44.615 [info] <0.31.0> Application riffed started on node nonode@nohost
+2016-08-30 10:29:44.871 [info] <0.31.0> Application elixir_thrift started on node nonode@nohost
+2016-08-30 10:31:35.395 [error] <0.159.0> Supervisor 'Elixir.Logger.Supervisor' had child 'Elixir.Logger.ErrorHandler' started with 'Elixir.Logger.Watcher':watcher(error_logger, 'Elixir.Logger.ErrorHandler', {true,false,500}, link) at <0.164.0> exit with reason normal in context child_terminated
+2016-08-30 10:31:35.528 [info] <0.31.0> Application lager started on node nonode@nohost
+2016-08-30 10:31:35.528 [info] <0.31.0> Application exlager started on node nonode@nohost
+2016-08-30 10:31:35.529 [info] <0.31.0> Application riffed started on node nonode@nohost
+2016-08-30 10:31:35.773 [info] <0.31.0> Application elixir_thrift started on node nonode@nohost
+2016-08-30 10:32:25.809 [error] <0.159.0> Supervisor 'Elixir.Logger.Supervisor' had child 'Elixir.Logger.ErrorHandler' started with 'Elixir.Logger.Watcher':watcher(error_logger, 'Elixir.Logger.ErrorHandler', {true,false,500}, link) at <0.164.0> exit with reason normal in context child_terminated
+2016-08-30 10:32:25.947 [info] <0.31.0> Application lager started on node nonode@nohost
+2016-08-30 10:32:25.947 [info] <0.31.0> Application exlager started on node nonode@nohost
+2016-08-30 10:32:25.947 [info] <0.31.0> Application riffed started on node nonode@nohost
+2016-08-30 10:32:26.298 [info] <0.31.0> Application elixir_thrift started on node nonode@nohost
+2016-08-30 10:33:00.095 [error] <0.159.0> Supervisor 'Elixir.Logger.Supervisor' had child 'Elixir.Logger.ErrorHandler' started with 'Elixir.Logger.Watcher':watcher(error_logger, 'Elixir.Logger.ErrorHandler', {true,false,500}, link) at <0.164.0> exit with reason normal in context child_terminated
+2016-08-30 10:33:00.229 [info] <0.31.0> Application lager started on node nonode@nohost
+2016-08-30 10:33:00.230 [info] <0.31.0> Application exlager started on node nonode@nohost
+2016-08-30 10:33:00.230 [info] <0.31.0> Application riffed started on node nonode@nohost
+2016-08-30 10:33:00.506 [info] <0.31.0> Application elixir_thrift started on node nonode@nohost
+2016-08-30 10:33:39.934 [error] <0.159.0> Supervisor 'Elixir.Logger.Supervisor' had child 'Elixir.Logger.ErrorHandler' started with 'Elixir.Logger.Watcher':watcher(error_logger, 'Elixir.Logger.ErrorHandler', {true,false,500}, link) at <0.164.0> exit with reason normal in context child_terminated
+2016-08-30 10:33:40.061 [info] <0.31.0> Application lager started on node nonode@nohost
+2016-08-30 10:33:40.063 [info] <0.31.0> Application exlager started on node nonode@nohost
+2016-08-30 10:33:40.063 [info] <0.31.0> Application riffed started on node nonode@nohost
+2016-08-30 10:33:40.324 [info] <0.31.0> Application elixir_thrift started on node nonode@nohost
+2016-08-30 10:34:30.982 [error] <0.159.0> Supervisor 'Elixir.Logger.Supervisor' had child 'Elixir.Logger.ErrorHandler' started with 'Elixir.Logger.Watcher':watcher(error_logger, 'Elixir.Logger.ErrorHandler', {true,false,500}, link) at <0.164.0> exit with reason normal in context child_terminated
+2016-08-30 10:34:31.122 [info] <0.31.0> Application lager started on node nonode@nohost
+2016-08-30 10:34:31.122 [info] <0.31.0> Application exlager started on node nonode@nohost
+2016-08-30 10:34:31.122 [info] <0.31.0> Application riffed started on node nonode@nohost
+2016-08-30 10:34:31.389 [info] <0.31.0> Application elixir_thrift started on node nonode@nohost
+2016-08-30 10:35:41.520 [error] <0.159.0> Supervisor 'Elixir.Logger.Supervisor' had child 'Elixir.Logger.ErrorHandler' started with 'Elixir.Logger.Watcher':watcher(error_logger, 'Elixir.Logger.ErrorHandler', {true,false,500}, link) at <0.164.0> exit with reason normal in context child_terminated
+2016-08-30 10:35:41.652 [info] <0.31.0> Application lager started on node nonode@nohost
+2016-08-30 10:35:41.653 [info] <0.31.0> Application exlager started on node nonode@nohost
+2016-08-30 10:35:41.653 [info] <0.31.0> Application riffed started on node nonode@nohost
+2016-08-30 10:35:41.959 [info] <0.31.0> Application elixir_thrift started on node nonode@nohost
+2016-08-30 10:35:43.009 [warning] <0.30.0> lager_error_logger_h dropped 185 messages in the last second that exceeded the limit of 50 messages/sec
+2016-08-30 10:35:44.005 [warning] <0.30.0> lager_error_logger_h dropped 189 messages in the last second that exceeded the limit of 50 messages/sec
+2016-08-30 10:38:59.681 [error] <0.159.0> Supervisor 'Elixir.Logger.Supervisor' had child 'Elixir.Logger.ErrorHandler' started with 'Elixir.Logger.Watcher':watcher(error_logger, 'Elixir.Logger.ErrorHandler', {true,false,500}, link) at <0.164.0> exit with reason normal in context child_terminated
+2016-08-30 10:38:59.802 [info] <0.31.0> Application lager started on node nonode@nohost
+2016-08-30 10:38:59.803 [info] <0.31.0> Application exlager started on node nonode@nohost
+2016-08-30 10:38:59.803 [info] <0.31.0> Application riffed started on node nonode@nohost
+2016-08-30 10:39:00.075 [info] <0.31.0> Application elixir_thrift started on node nonode@nohost
+2016-08-30 10:39:32.363 [error] <0.159.0> Supervisor 'Elixir.Logger.Supervisor' had child 'Elixir.Logger.ErrorHandler' started with 'Elixir.Logger.Watcher':watcher(error_logger, 'Elixir.Logger.ErrorHandler', {true,false,500}, link) at <0.164.0> exit with reason normal in context child_terminated
+2016-08-30 10:39:32.521 [info] <0.31.0> Application lager started on node nonode@nohost
+2016-08-30 10:39:32.521 [info] <0.31.0> Application exlager started on node nonode@nohost
+2016-08-30 10:39:32.521 [info] <0.31.0> Application riffed started on node nonode@nohost
+2016-08-30 10:39:32.822 [info] <0.31.0> Application elixir_thrift started on node nonode@nohost
+2016-08-30 10:40:20.369 [error] <0.159.0> Supervisor 'Elixir.Logger.Supervisor' had child 'Elixir.Logger.ErrorHandler' started with 'Elixir.Logger.Watcher':watcher(error_logger, 'Elixir.Logger.ErrorHandler', {true,false,500}, link) at <0.164.0> exit with reason normal in context child_terminated
+2016-08-30 10:40:20.572 [info] <0.31.0> Application lager started on node nonode@nohost
+2016-08-30 10:40:20.572 [info] <0.31.0> Application exlager started on node nonode@nohost
+2016-08-30 10:40:20.572 [info] <0.31.0> Application riffed started on node nonode@nohost
+2016-08-30 10:40:20.836 [info] <0.31.0> Application elixir_thrift started on node nonode@nohost
+2016-08-30 10:40:57.531 [error] <0.159.0> Supervisor 'Elixir.Logger.Supervisor' had child 'Elixir.Logger.ErrorHandler' started with 'Elixir.Logger.Watcher':watcher(error_logger, 'Elixir.Logger.ErrorHandler', {true,false,500}, link) at <0.164.0> exit with reason normal in context child_terminated
+2016-08-30 10:40:57.661 [info] <0.31.0> Application lager started on node nonode@nohost
+2016-08-30 10:40:57.661 [info] <0.31.0> Application exlager started on node nonode@nohost
+2016-08-30 10:40:57.661 [info] <0.31.0> Application riffed started on node nonode@nohost
+2016-08-30 10:40:57.907 [info] <0.31.0> Application elixir_thrift started on node nonode@nohost
+2016-08-30 10:41:16.156 [error] <0.159.0> Supervisor 'Elixir.Logger.Supervisor' had child 'Elixir.Logger.ErrorHandler' started with 'Elixir.Logger.Watcher':watcher(error_logger, 'Elixir.Logger.ErrorHandler', {true,false,500}, link) at <0.164.0> exit with reason normal in context child_terminated
+2016-08-30 10:41:16.311 [info] <0.31.0> Application lager started on node nonode@nohost
+2016-08-30 10:41:16.311 [info] <0.31.0> Application exlager started on node nonode@nohost
+2016-08-30 10:41:16.311 [info] <0.31.0> Application riffed started on node nonode@nohost
+2016-08-30 10:41:16.588 [info] <0.31.0> Application elixir_thrift started on node nonode@nohost
+2016-08-30 10:43:53.971 [error] <0.159.0> Supervisor 'Elixir.Logger.Supervisor' had child 'Elixir.Logger.ErrorHandler' started with 'Elixir.Logger.Watcher':watcher(error_logger, 'Elixir.Logger.ErrorHandler', {true,false,500}, link) at <0.164.0> exit with reason normal in context child_terminated
+2016-08-30 10:43:54.109 [info] <0.31.0> Application lager started on node nonode@nohost
+2016-08-30 10:43:54.110 [info] <0.31.0> Application exlager started on node nonode@nohost
+2016-08-30 10:43:54.110 [info] <0.31.0> Application riffed started on node nonode@nohost
+2016-08-30 10:43:54.571 [info] <0.31.0> Application elixir_thrift started on node nonode@nohost
+2016-08-30 10:44:17.881 [error] <0.159.0> Supervisor 'Elixir.Logger.Supervisor' had child 'Elixir.Logger.ErrorHandler' started with 'Elixir.Logger.Watcher':watcher(error_logger, 'Elixir.Logger.ErrorHandler', {true,false,500}, link) at <0.164.0> exit with reason normal in context child_terminated
+2016-08-30 10:44:18.056 [info] <0.31.0> Application lager started on node nonode@nohost
+2016-08-30 10:44:18.057 [info] <0.31.0> Application exlager started on node nonode@nohost
+2016-08-30 10:44:18.057 [info] <0.31.0> Application riffed started on node nonode@nohost
+2016-08-30 10:44:18.388 [info] <0.31.0> Application elixir_thrift started on node nonode@nohost
+2016-08-30 10:45:36.555 [error] <0.159.0> Supervisor 'Elixir.Logger.Supervisor' had child 'Elixir.Logger.ErrorHandler' started with 'Elixir.Logger.Watcher':watcher(error_logger, 'Elixir.Logger.ErrorHandler', {true,false,500}, link) at <0.164.0> exit with reason normal in context child_terminated
+2016-08-30 10:45:36.674 [info] <0.31.0> Application lager started on node nonode@nohost
+2016-08-30 10:45:36.675 [info] <0.31.0> Application exlager started on node nonode@nohost
+2016-08-30 10:45:36.675 [info] <0.31.0> Application riffed started on node nonode@nohost
+2016-08-30 10:45:36.932 [info] <0.31.0> Application elixir_thrift started on node nonode@nohost
+2016-08-30 10:46:18.309 [error] <0.159.0> Supervisor 'Elixir.Logger.Supervisor' had child 'Elixir.Logger.ErrorHandler' started with 'Elixir.Logger.Watcher':watcher(error_logger, 'Elixir.Logger.ErrorHandler', {true,false,500}, link) at <0.164.0> exit with reason normal in context child_terminated
+2016-08-30 10:46:18.445 [info] <0.31.0> Application lager started on node nonode@nohost
+2016-08-30 10:46:18.445 [info] <0.31.0> Application exlager started on node nonode@nohost
+2016-08-30 10:46:18.446 [info] <0.31.0> Application riffed started on node nonode@nohost
+2016-08-30 10:46:18.714 [info] <0.31.0> Application elixir_thrift started on node nonode@nohost
+2016-08-30 10:47:14.557 [error] <0.159.0> Supervisor 'Elixir.Logger.Supervisor' had child 'Elixir.Logger.ErrorHandler' started with 'Elixir.Logger.Watcher':watcher(error_logger, 'Elixir.Logger.ErrorHandler', {true,false,500}, link) at <0.164.0> exit with reason normal in context child_terminated
+2016-08-30 10:47:14.710 [info] <0.31.0> Application lager started on node nonode@nohost
+2016-08-30 10:47:14.711 [info] <0.31.0> Application exlager started on node nonode@nohost
+2016-08-30 10:47:14.711 [info] <0.31.0> Application riffed started on node nonode@nohost
+2016-08-30 10:47:15.019 [info] <0.31.0> Application elixir_thrift started on node nonode@nohost
+2016-08-31 10:28:02.055 [error] <0.159.0> Supervisor 'Elixir.Logger.Supervisor' had child 'Elixir.Logger.ErrorHandler' started with 'Elixir.Logger.Watcher':watcher(error_logger, 'Elixir.Logger.ErrorHandler', {true,false,500}, link) at <0.164.0> exit with reason normal in context child_terminated
+2016-08-31 10:28:02.304 [info] <0.31.0> Application lager started on node nonode@nohost
+2016-08-31 10:28:02.305 [info] <0.31.0> Application exlager started on node nonode@nohost
+2016-08-31 10:28:02.305 [info] <0.31.0> Application riffed started on node nonode@nohost
+2016-08-31 10:28:04.849 [info] <0.31.0> Application elixir_thrift started on node nonode@nohost
+2016-08-31 10:29:10.836 [error] <0.159.0> Supervisor 'Elixir.Logger.Supervisor' had child 'Elixir.Logger.ErrorHandler' started with 'Elixir.Logger.Watcher':watcher(error_logger, 'Elixir.Logger.ErrorHandler', {true,false,500}, link) at <0.164.0> exit with reason normal in context child_terminated
+2016-08-31 10:29:10.983 [info] <0.31.0> Application lager started on node nonode@nohost
+2016-08-31 10:29:10.983 [info] <0.31.0> Application exlager started on node nonode@nohost
+2016-08-31 10:29:10.983 [info] <0.31.0> Application riffed started on node nonode@nohost
+2016-08-31 10:29:11.447 [info] <0.31.0> Application elixir_thrift started on node nonode@nohost

@@ -1,0 +1,11 @@
+{application,elixir_thrift,
+             [{registered,[]},
+              {description,"elixir_thrift"},
+              {vsn,"0.1.0"},
+              {modules,['Elixir.ElixirThrift','Elixir.ElixirThrift.Binary',
+                        'Elixir.ElixirThrift.Receiver',
+                        'Elixir.ElixirThrift.Sender',
+                        'Elixir.ElixirThrift.Struct',
+                        'Elixir.ElixirThrift.Struct.Message',models_types]},
+              {mod,{'Elixir.ElixirThrift',[]}},
+              {applications,[kernel,stdlib,elixir,logger,tackle,riffed]}]}.

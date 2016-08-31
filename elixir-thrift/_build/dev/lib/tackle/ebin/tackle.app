@@ -1,0 +1,10 @@
+{application,tackle,
+             [{registered,[]},
+              {description,"tackle"},
+              {vsn,"0.0.1"},
+              {modules,['Elixir.Tackle','Elixir.Tackle.Channel',
+                        'Elixir.Tackle.Consumer',
+                        'Elixir.Tackle.Consumer.Behaviour',
+                        'Elixir.Tackle.DelayedRetry','Elixir.Tackle.Exchange',
+                        'Elixir.Tackle.Queue','Elixir.Tackle.Republisher']},
+              {applications,[kernel,stdlib,elixir,logger,amqp]}]}.
