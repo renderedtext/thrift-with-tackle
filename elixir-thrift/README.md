@@ -2,6 +2,41 @@
 
 Test application for implementing thrift while using elixir. Comes in pair with an another ruby application, which is also using thrift.
 
+## Model
+
+The model that contains the Thrift structs can be found in the ```thrift/models.thrift``` file and a basic thrift struct looks something like this:
+
+```thrift
+struct User {
+  1: string name
+  2: i32 age
+}
+```
+
+## Working with structs
+
+To work with structs defined in the model a seperate module must be defined, looking something like this:
+
+```elixir
+defmodule ElixirThrift.Struct do
+  use Riffed.Struct, models_types: [:User]
+end
+```
+
+Notice that it says **models_types**. The part before *_types* must match the name of the *.thrift* file in the ```thrift``` folder of the project.
+
+To create a new instance of a struct, do this:
+```elixir
+ElixirThrift.Struct.User.new(name: "Wade Winston Wilson", age: 25)
+```
+This would be an equivalent of:
+```
+%ElixirThrift.Struct.User{age: 25, name: "Wade Winston Wilson"}
+```
+
+
+## Serialization
+
 The serialization and deserialization of messages are done by the following functions, which can be found in the ```ElixirThrift.Binary``` module:
 
 ```elixir
@@ -46,4 +81,7 @@ defp write_proto(thrift_struct, protocol, struct_definition) do
 end
 
 ```
-The sending and receiving of messages is done through Tackle in a standard way, using ```Tackle.publish``` and ```handle_message```
+
+## Sending and receiving
+
+The sending and receiving of messages is done through ```ex-tackle``` in a standard way, using ```Tackle.publish``` and ```handle_message```. This can be done because stings are viewed as binary, so our serialized messages can be passed as arguments for the methods mentioned above.
