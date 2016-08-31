@@ -95,3 +95,75 @@
 2016-08-31 10:29:10.983 [info] <0.31.0> Application exlager started on node nonode@nohost
 2016-08-31 10:29:10.983 [info] <0.31.0> Application riffed started on node nonode@nohost
 2016-08-31 10:29:11.447 [info] <0.31.0> Application elixir_thrift started on node nonode@nohost
+2016-08-31 15:12:27.208 [error] <0.210.0> Supervisor 'Elixir.Logger.Supervisor' had child 'Elixir.Logger.ErrorHandler' started with 'Elixir.Logger.Watcher':watcher(error_logger, 'Elixir.Logger.ErrorHandler', {true,false,500}, link) at <0.215.0> exit with reason normal in context child_terminated
+2016-08-31 15:12:27.372 [info] <0.7.0> Application lager started on node nonode@nohost
+2016-08-31 15:12:27.372 [info] <0.7.0> Application exlager started on node nonode@nohost
+2016-08-31 15:12:27.372 [info] <0.7.0> Application riffed started on node nonode@nohost
+2016-08-31 15:12:27.481 [error] <0.262.0> CRASH REPORT Process <0.262.0> with 0 neighbours exited with reason: no match of right hand value {error,econnrefused} in 'Elixir.ElixirThrift.Receiver':init/1 line 2 in gen_server:init_it/6 line 352
+2016-08-31 15:12:27.482 [error] <0.261.0> Supervisor 'Elixir.ElixirThrift.Supervisor' had child 'Elixir.ElixirThrift.Receiver' started with 'Elixir.ElixirThrift.Receiver':start_link() at undefined exit with reason no match of right hand value {error,econnrefused} in 'Elixir.ElixirThrift.Receiver':init/1 line 2 in context start_error
+2016-08-31 15:12:27.482 [error] <0.259.0> CRASH REPORT Process <0.259.0> with 0 neighbours exited with reason: {{shutdown,{failed_to_start_child,'Elixir.ElixirThrift.Receiver',{{badmatch,{error,econnrefused}},[{'Elixir.ElixirThrift.Receiver',init,1,[{file,"lib/elixir_thrift/receiver.ex"},{line,2}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,328}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}}},{'Elixir.ElixirThrift',start,[normal,[]]}} in application_master:init/4 line 134
+2016-08-31 15:13:54.626 [error] <0.154.0> Supervisor 'Elixir.Logger.Supervisor' had child 'Elixir.Logger.ErrorHandler' started with 'Elixir.Logger.Watcher':watcher(error_logger, 'Elixir.Logger.ErrorHandler', {true,false,500}, link) at <0.159.0> exit with reason normal in context child_terminated
+2016-08-31 15:13:54.778 [info] <0.7.0> Application lager started on node nonode@nohost
+2016-08-31 15:13:54.778 [info] <0.7.0> Application exlager started on node nonode@nohost
+2016-08-31 15:13:54.779 [info] <0.7.0> Application riffed started on node nonode@nohost
+2016-08-31 15:13:54.882 [error] <0.203.0> CRASH REPORT Process <0.203.0> with 0 neighbours exited with reason: no match of right hand value {error,econnrefused} in 'Elixir.Tackle':publish/2 line 10 in application_master:init/4 line 134
+2016-08-31 15:15:20.441 [error] <0.144.0> Supervisor 'Elixir.Logger.Supervisor' had child 'Elixir.Logger.ErrorHandler' started with 'Elixir.Logger.Watcher':watcher(error_logger, 'Elixir.Logger.ErrorHandler', {true,false,500}, link) at <0.149.0> exit with reason normal in context child_terminated
+2016-08-31 15:15:20.597 [info] <0.7.0> Application lager started on node nonode@nohost
+2016-08-31 15:15:20.597 [info] <0.7.0> Application exlager started on node nonode@nohost
+2016-08-31 15:15:20.598 [info] <0.7.0> Application riffed started on node nonode@nohost
+2016-08-31 15:15:20.894 [info] <0.7.0> Application elixir_thrift started on node nonode@nohost
+2016-08-31 15:18:22.077 [error] <0.210.0> Supervisor 'Elixir.Logger.Supervisor' had child 'Elixir.Logger.ErrorHandler' started with 'Elixir.Logger.Watcher':watcher(error_logger, 'Elixir.Logger.ErrorHandler', {true,false,500}, link) at <0.215.0> exit with reason normal in context child_terminated
+2016-08-31 15:18:22.219 [info] <0.7.0> Application lager started on node nonode@nohost
+2016-08-31 15:18:22.219 [info] <0.7.0> Application exlager started on node nonode@nohost
+2016-08-31 15:18:22.219 [info] <0.7.0> Application riffed started on node nonode@nohost
+2016-08-31 15:18:22.233 [error] <0.259.0> CRASH REPORT Process <0.259.0> with 0 neighbours exited with reason: struct_unmatched in thrift_protocol:write/2 line 334 in application_master:init/4 line 134
+2016-08-31 15:19:48.059 [error] <0.154.0> Supervisor 'Elixir.Logger.Supervisor' had child 'Elixir.Logger.ErrorHandler' started with 'Elixir.Logger.Watcher':watcher(error_logger, 'Elixir.Logger.ErrorHandler', {true,false,500}, link) at <0.159.0> exit with reason normal in context child_terminated
+2016-08-31 15:19:48.182 [info] <0.7.0> Application lager started on node nonode@nohost
+2016-08-31 15:19:48.182 [info] <0.7.0> Application exlager started on node nonode@nohost
+2016-08-31 15:19:48.183 [info] <0.7.0> Application riffed started on node nonode@nohost
+2016-08-31 15:19:48.487 [info] <0.7.0> Application elixir_thrift started on node nonode@nohost
+2016-08-31 15:22:20.396 [error] <0.154.0> Supervisor 'Elixir.Logger.Supervisor' had child 'Elixir.Logger.ErrorHandler' started with 'Elixir.Logger.Watcher':watcher(error_logger, 'Elixir.Logger.ErrorHandler', {true,false,500}, link) at <0.159.0> exit with reason normal in context child_terminated
+2016-08-31 15:22:20.554 [info] <0.7.0> Application lager started on node nonode@nohost
+2016-08-31 15:22:20.554 [info] <0.7.0> Application exlager started on node nonode@nohost
+2016-08-31 15:22:20.554 [info] <0.7.0> Application riffed started on node nonode@nohost
+2016-08-31 15:22:20.810 [info] <0.7.0> Application elixir_thrift started on node nonode@nohost
+2016-08-31 15:22:37.007 [error] <0.154.0> Supervisor 'Elixir.Logger.Supervisor' had child 'Elixir.Logger.ErrorHandler' started with 'Elixir.Logger.Watcher':watcher(error_logger, 'Elixir.Logger.ErrorHandler', {true,false,500}, link) at <0.159.0> exit with reason normal in context child_terminated
+2016-08-31 15:22:37.121 [info] <0.7.0> Application lager started on node nonode@nohost
+2016-08-31 15:22:37.121 [info] <0.7.0> Application exlager started on node nonode@nohost
+2016-08-31 15:22:37.121 [info] <0.7.0> Application riffed started on node nonode@nohost
+2016-08-31 15:22:37.172 [error] <0.203.0> CRASH REPORT Process <0.203.0> with 0 neighbours exited with reason: struct_unmatched in thrift_protocol:write/2 line 334 in application_master:init/4 line 134
+2016-08-31 15:23:56.063 [error] <0.154.0> Supervisor 'Elixir.Logger.Supervisor' had child 'Elixir.Logger.ErrorHandler' started with 'Elixir.Logger.Watcher':watcher(error_logger, 'Elixir.Logger.ErrorHandler', {true,false,500}, link) at <0.159.0> exit with reason normal in context child_terminated
+2016-08-31 15:23:56.179 [info] <0.7.0> Application lager started on node nonode@nohost
+2016-08-31 15:23:56.179 [info] <0.7.0> Application exlager started on node nonode@nohost
+2016-08-31 15:23:56.180 [info] <0.7.0> Application riffed started on node nonode@nohost
+2016-08-31 15:23:56.220 [error] <0.203.0> CRASH REPORT Process <0.203.0> with 0 neighbours exited with reason: struct_unmatched in thrift_protocol:write/2 line 334 in application_master:init/4 line 134
+2016-08-31 15:25:26.914 [error] <0.154.0> Supervisor 'Elixir.Logger.Supervisor' had child 'Elixir.Logger.ErrorHandler' started with 'Elixir.Logger.Watcher':watcher(error_logger, 'Elixir.Logger.ErrorHandler', {true,false,500}, link) at <0.159.0> exit with reason normal in context child_terminated
+2016-08-31 15:25:27.096 [info] <0.7.0> Application lager started on node nonode@nohost
+2016-08-31 15:25:27.096 [info] <0.7.0> Application exlager started on node nonode@nohost
+2016-08-31 15:25:27.097 [info] <0.7.0> Application riffed started on node nonode@nohost
+2016-08-31 15:25:27.273 [error] <0.203.0> CRASH REPORT Process <0.203.0> with 0 neighbours exited with reason: struct_unmatched in thrift_protocol:write/2 line 334 in application_master:init/4 line 134
+2016-08-31 15:28:21.659 [error] <0.154.0> Supervisor 'Elixir.Logger.Supervisor' had child 'Elixir.Logger.ErrorHandler' started with 'Elixir.Logger.Watcher':watcher(error_logger, 'Elixir.Logger.ErrorHandler', {true,false,500}, link) at <0.159.0> exit with reason normal in context child_terminated
+2016-08-31 15:28:21.787 [info] <0.7.0> Application lager started on node nonode@nohost
+2016-08-31 15:28:21.787 [info] <0.7.0> Application exlager started on node nonode@nohost
+2016-08-31 15:28:21.788 [info] <0.7.0> Application riffed started on node nonode@nohost
+2016-08-31 15:28:22.341 [info] <0.7.0> Application elixir_thrift started on node nonode@nohost
+2016-08-31 15:32:58.202 [error] <0.160.0> Supervisor 'Elixir.Logger.Supervisor' had child 'Elixir.Logger.ErrorHandler' started with 'Elixir.Logger.Watcher':watcher(error_logger, 'Elixir.Logger.ErrorHandler', {true,false,500}, link) at <0.165.0> exit with reason normal in context child_terminated
+2016-08-31 15:32:58.315 [info] <0.7.0> Application lager started on node nonode@nohost
+2016-08-31 15:32:58.316 [info] <0.7.0> Application exlager started on node nonode@nohost
+2016-08-31 15:32:58.316 [info] <0.7.0> Application riffed started on node nonode@nohost
+2016-08-31 15:32:58.678 [info] <0.7.0> Application elixir_thrift started on node nonode@nohost
+2016-08-31 15:33:20.154 [error] <0.144.0> Supervisor 'Elixir.Logger.Supervisor' had child 'Elixir.Logger.ErrorHandler' started with 'Elixir.Logger.Watcher':watcher(error_logger, 'Elixir.Logger.ErrorHandler', {true,false,500}, link) at <0.149.0> exit with reason normal in context child_terminated
+2016-08-31 15:33:20.281 [info] <0.7.0> Application lager started on node nonode@nohost
+2016-08-31 15:33:20.281 [info] <0.7.0> Application exlager started on node nonode@nohost
+2016-08-31 15:33:20.281 [info] <0.7.0> Application riffed started on node nonode@nohost
+2016-08-31 15:33:20.587 [info] <0.7.0> Application elixir_thrift started on node nonode@nohost
+2016-08-31 15:33:36.261 [error] <0.154.0> Supervisor 'Elixir.Logger.Supervisor' had child 'Elixir.Logger.ErrorHandler' started with 'Elixir.Logger.Watcher':watcher(error_logger, 'Elixir.Logger.ErrorHandler', {true,false,500}, link) at <0.159.0> exit with reason normal in context child_terminated
+2016-08-31 15:33:36.380 [info] <0.7.0> Application lager started on node nonode@nohost
+2016-08-31 15:33:36.380 [info] <0.7.0> Application exlager started on node nonode@nohost
+2016-08-31 15:33:36.380 [info] <0.7.0> Application riffed started on node nonode@nohost
+2016-08-31 15:33:36.760 [info] <0.7.0> Application elixir_thrift started on node nonode@nohost
+2016-08-31 15:33:59.078 [error] <0.154.0> Supervisor 'Elixir.Logger.Supervisor' had child 'Elixir.Logger.ErrorHandler' started with 'Elixir.Logger.Watcher':watcher(error_logger, 'Elixir.Logger.ErrorHandler', {true,false,500}, link) at <0.159.0> exit with reason normal in context child_terminated
+2016-08-31 15:33:59.203 [info] <0.7.0> Application lager started on node nonode@nohost
+2016-08-31 15:33:59.203 [info] <0.7.0> Application exlager started on node nonode@nohost
+2016-08-31 15:33:59.204 [info] <0.7.0> Application riffed started on node nonode@nohost
+2016-08-31 15:33:59.227 [error] <0.203.0> CRASH REPORT Process <0.203.0> with 0 neighbours exited with reason: bad argument in thrift_binary_protocol:write/2 line 149 in application_master:init/4 line 134
