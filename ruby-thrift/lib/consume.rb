@@ -10,5 +10,5 @@ options = {
 
 Tackle.subscribe(options) do |raw_message|
   user = RThrift.deserialize(raw_message)
-  puts "Name: #{user.name}\Age: #{user.age}"
+  puts "Name: #{user.name}\nAge: #{user.age}"
 end
