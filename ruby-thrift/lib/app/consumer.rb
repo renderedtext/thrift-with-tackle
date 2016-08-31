@@ -6,7 +6,7 @@ module App
     def self.subscribe(options)
       Tackle.subscribe(options) do |raw_message|
         message = RThrift.deserialize(raw_message)
-        puts "#{message.url} - #{message.payload}"
+        puts "URL: #{message.url}\nPaylod: #{message.payload}"
       end
     end
 
