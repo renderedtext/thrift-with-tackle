@@ -3,4 +3,5 @@
 /ruby-thrift/gen-rb
 /elixir-thrift/deps
 /elixir-thrift/_build
-/elixir-thrft/src
+/elixir-thrift/log
+/elixir-thrift/src
