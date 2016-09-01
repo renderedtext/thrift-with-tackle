@@ -2,6 +2,28 @@
 
 Test application for implementing thrift while using elixir. Comes in pair with an another ruby application, which is also using thrift.
 
+## Getting started
+
+Thrift must be installed and the following is added to the mix.exs:
+```elixir
+def project do
+  [compilers: [:thrift | Mix.compilers],
+  thrift_files: Mix.Utils.extract_files(["thrift"], [:thrift])]
+end
+
+def application do
+  [applications:
+    [:tackle,
+     :riffed]
+  ]
+end
+
+defp deps do
+  [ {:tackle, github: "renderedtext/ex-tackle"},
+    {:riffed, github: "pinterest/riffed", tag: "1.0.0", submodules: true} ]
+end
+```
+
 ## Model
 
 The model that contains the Thrift structs can be found in the ```thrift/models.thrift``` file and a basic thrift struct looks something like this:
