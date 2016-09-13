@@ -1,0 +1,24 @@
+GIT
+  remote: https://github.com/renderedtext/tackle
+  revision: e0bf24f613a824eea619a1259635cc0e99626166
+  specs:
+    tackle (0.8.0)
+      bunny
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    amq-protocol (2.0.1)
+    bunny (2.5.1)
+      amq-protocol (>= 2.0.1)
+    thrift (0.9.3.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  tackle!
+  thrift (~> 0.9.3.0)
+
+BUNDLED WITH
+   1.11.2
