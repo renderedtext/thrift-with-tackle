@@ -2,7 +2,7 @@ require "tackle"
 require "thrift_serializer"
 
 $:.push("gen-rb")
-require("models_constants")
+require "models_constants"
 
 user      = User.new
 user.name = "John Smith"

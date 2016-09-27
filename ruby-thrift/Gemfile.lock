@@ -1,4 +1,11 @@
 GIT
+  remote: git://github.com/renderedtext/thrift-serializer.git
+  revision: 7bd3fafe507cff0e37b04af8a878bab86b0360df
+  specs:
+    rt-thrift-serializer (0.1.0)
+      thrift (~> 0.9.3.0)
+
+GIT
   remote: https://github.com/renderedtext/tackle
   revision: e0bf24f613a824eea619a1259635cc0e99626166
   specs:
@@ -17,8 +24,8 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  rt-thrift-serializer!
   tackle!
-  thrift (~> 0.9.3.0)
 
 BUNDLED WITH
    1.11.2
