@@ -1,6 +1,7 @@
 # Elixir-thrift
 
-Test application for implementing thrift while using elixir. Comes in pair with an another ruby application, which is also using thrift.
+Test application for implementing thrift while using elixir. It comes in pair
+with a ruby application, which is also using thrift.
 
 ## Getting started
 
@@ -14,19 +15,20 @@ end
 def application do
   [applications:
     [:tackle,
-     :riffed]
+     :thrift_serializer]
   ]
 end
 
 defp deps do
   [ {:tackle, github: "renderedtext/ex-tackle"},
-    {:riffed, github: "pinterest/riffed", tag: "1.0.0", submodules: true} ]
+    {:thrift_serializer, github: "renderedtext/ex-thrift-serializer"} ]
 end
 ```
 
 ## Model
 
-The model that contains the Thrift structs can be found in the ```thrift/models.thrift``` file and a basic thrift struct looks something like this:
+The model that contains the Thrift structs can be found in the
+`thrift/models.thrift` file. A basic thrift struct looks something like this:
 
 ```thrift
 struct User {
@@ -37,73 +39,51 @@ struct User {
 
 ## Working with structs
 
-To work with structs defined in the model a seperate module must be defined, looking something like this:
+To work with structs defined in the model a seperate module must be defined,
+looking something like this:
 
 ```elixir
-defmodule ElixirThrift.Struct do
+defmodule ElixirThrift.Models do
   use Riffed.Struct, models_types: [:User]
+  use ThriftSerializer
 end
 ```
 
-Notice that it says **models_types**. The part before *_types* must match the name of the *.thrift* file in the ```thrift``` folder of the project.
+Notice that it says **models_types**. The part before *_types* must match the
+name of the *.thrift* file in the `thrift` folder of the project.
 
 To create a new instance of a struct, do this:
 ```elixir
-ElixirThrift.Struct.User.new(name: "Wade Winston Wilson", age: 25)
+ElixirThrift.Models.User.new(name: "Wade Winston Wilson", age: 25)
 ```
 This would be an equivalent of:
 ```
-%ElixirThrift.Struct.User{age: 25, name: "Wade Winston Wilson"}
+%ElixirThrift.Models.User{age: 25, name: "Wade Winston Wilson"}
 ```
 
 
 ## Serialization
 
-The serialization and deserialization of messages are done by the following functions, which can be found in the ```ElixirThrift.Binary``` module:
+The serialization and deserialization of messages are done by using the
+`ex-thrift-serializer`, its functions `encode/2` and `decode/2` to be more
+precise. </br>
 
+To serialize an `User` thrift struct, do the following:
 ```elixir
+message = ElixirThrift.Models.User.new(name: "Wade Winston Wilson", age: 25)
+encoded_message = ElixirThrift.Models.encode(message,
+                  model: ElixirThrift.Models.User)
+```
 
-#converts from binary to elixir using a Thrift struct definition
-#struct_definition should look something like this: {:struct, {:models_types, :User}}
-def binary_to_elixir(record_binary, struct_definition) do
-  try do
-
-    with({:ok, memory_buffer_transport} <- :thrift_memory_buffer.new(record_binary),
-         {:ok, binary_protocol} <- :thrift_binary_protocol.new(memory_buffer_transport),
-         {_, {:ok, record}} <- :thrift_protocol.read(binary_protocol, struct_definition)) do
-
-           {:ok, ElixirThrift.Struct.to_elixir(record, struct_definition)}
-
-    end
-
-  rescue _ ->
-      IO.puts "Cant decode"
-      {:error, :cant_decode}
-  end
-end
-
-#converts from elixir to binary using a Thrift struct definition
-#struct_definition should look something like this: {:struct, {:models_types, :User}}
-def elixir_to_binary(struct_to_binarise, struct_definition) do
-    with({:ok, tf} <- :thrift_memory_buffer.new_transport_factory(),
-        {:ok, pf} <- :thrift_binary_protocol.new_protocol_factory(tf, []),
-        {:ok, binary_protocol} <- pf.()) do
-
-          proto = ElixirThrift.Struct.to_erlang(struct_to_binarise, struct_definition)
-          |> write_proto(binary_protocol, struct_definition)
-
-          {_, data} = :thrift_protocol.flush_transport(proto)
-          :erlang.iolist_to_binary(data)
-        end
-end
-
-defp write_proto(thrift_struct, protocol, struct_definition) do
-  {proto, :ok} = :thrift_protocol.write(protocol, {struct_definition, thrift_struct})
-  proto
-end
-
+To deserialize a previously serialized `User` thrift struct, do the following:
+```elixir
+decoded_message = ElixirThrift.Models.decode(message,
+                  model: ElixirThrift.Models.User)
 ```
 
 ## Sending and receiving
 
-The sending and receiving of messages is done through ```ex-tackle``` in a standard way, using ```Tackle.publish``` and ```handle_message```. This can be done because stings are viewed as binary, so our serialized messages can be passed as arguments for the methods mentioned above.
+The sending and receiving of messages is done through `ex-tackle` in a standard
+way, using `Tackle.publish` and `handle_message`. This can be done because
+strings are viewed as binary, so our serialized messages can be passed as
+arguments for the functions mentioned above.

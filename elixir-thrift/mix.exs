@@ -16,12 +16,12 @@ defmodule ElixirThrift.Mixfile do
     [mod: {ElixirThrift, []},
       applications: [:logger,
         :tackle,
-        :riffed
+        :thrift_serializer
     ]]
   end
 
   defp deps do
     [ {:tackle, github: "renderedtext/ex-tackle"},
-      {:riffed, github: "pinterest/riffed", tag: "1.0.0", submodules: true} ]
+      {:thrift_serializer, github: "renderedtext/ex-thrift-serializer"} ]
   end
 end
