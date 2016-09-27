@@ -1,5 +1,8 @@
 require "tackle"
-require_relative "rthrift"
+require "thrift_serializer"
+
+$:.push("gen-rb")
+require "models_constants"
 
 options = {
   :url         => "amqp://localhost",
@@ -9,6 +12,6 @@ options = {
 }
 
 Tackle.subscribe(options) do |raw_message|
-  user = RThrift.deserialize(raw_message)
+  user = ThriftSerializer.decode(raw_message, User.new)
   puts "Name: #{user.name}\nAge: #{user.age}"
 end

@@ -1,4 +1,4 @@
 struct User {
-  1: string name
-  2: i32 age
+  1: required string name
+  2: required i32 age
 }
