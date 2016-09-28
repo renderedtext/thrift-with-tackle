@@ -8,6 +8,8 @@ defmodule ElixirThrift do
       worker(ElixirThrift.Receiver, [], [restart: :permanent, shutdown: :infinity])
     ]
 
+    #ElixirThrift.Sender.send
+
     opts = [strategy: :one_for_one, name: ElixirThrift.Supervisor]
     Supervisor.start_link(children, opts)
   end
